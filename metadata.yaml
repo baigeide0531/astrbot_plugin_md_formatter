@@ -1,0 +1,25 @@
+name: astrbot_plugin_md_formatter
+display_name: MD 格式清理
+short_desc: 把 AI 输出的 markdown 转成 QQ 可读的纯文本
+desc: >-
+  解决 AstrBot + OneBot v11 (NapCat) 接入 QQ 时 markdown 无法渲染的问题。
+
+  AI 输出里常见的加粗 **文字**、标题 #、列表 -、表格 | a | b |、
+  代码块 ``` 等 markdown 语法，在 QQ 中不会被渲染，会直接露出原始符号，
+  导致消息难读。本插件在消息发送前自动把这些 markdown 语法转成
+  QQ 可直接阅读的纯文本：去掉符号、表格转成行列文本、代码块加边框标识。
+
+  可配置项：
+  - enabled            : 总开关
+  - keep_code_block    : 是否用边框保留代码块原文
+  - apply_to_platforms : 生效的平台列表（默认只处理 aiocqhttp / OneBot v11）
+version: v1.0.0
+author: User
+repo: ""
+tags:
+  - markdown
+  - 格式
+  - QQ
+  - 纯文本
+  - NapCat
+astrbot_version: ">=4.16"
