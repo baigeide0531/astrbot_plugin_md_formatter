@@ -1,0 +1,20 @@
+{
+  "enabled": {
+    "description": "启用转换",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后，markdown 转纯文本功能整体失效。"
+  },
+  "keep_code_block": {
+    "description": "保留代码块边框",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后，代码块保留原文并加边框标识；关闭则只保留代码文本，不加边框。"
+  },
+  "apply_to_platforms": {
+    "description": "生效的平台",
+    "type": "list",
+    "default": ["aiocqhttp"],
+    "hint": "只在这些平台生效。OneBot v11 / NapCat 为 aiocqhttp；如不确定请保持默认，避免影响 Telegram 等原生支持 markdown 渲染的平台。"
+  }
+}
