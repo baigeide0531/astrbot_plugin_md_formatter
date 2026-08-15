@@ -14,7 +14,7 @@ desc: >-
   - keep_code_block    : 是否用边框保留代码块原文
   - apply_to_platforms : 生效的平台列表（默认只处理 aiocqhttp / OneBot v11）
 version: v1.0.0
-author: User
+author: "桃子"
 repo: ""
 tags:
   - markdown
